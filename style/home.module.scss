@@ -1,0 +1,446 @@
+@import "shared.module";
+
+.slider__wrapper {
+  width: calc(100% + 94px);
+  @media screen and (max-width: 1500px){
+    width: 100%;
+  }
+  max-width: 1440px;
+
+  .slider {
+    height: 100%;
+
+    @include for-phone-only {
+      height: 200px;
+    }
+
+    .swiper-slide {
+      img {
+        border-radius: 12px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .swiper-pagination {
+
+      .swiper-pagination-bullet {
+        background: #FFFFFF;
+        height: 16px;
+        width: 16px;
+        opacity: 1;
+
+        @include for-phone-only {
+          height: 10px;
+          width: 10px;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        background: none;
+        border: 3px solid #FFFFFF;
+
+        @include for-phone-only {
+          border: 2px solid #FFFFFF;
+
+        }
+      }
+    }
+  }
+}
+
+//БЛОК Последствия дефицита витаминов
+.consequences__block {
+  @include titleGap40;
+  @include for-phone-only {
+    gap: 12px;
+  }
+
+  .consequences__title {
+    text-align: center;
+    color: $primary-main;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 110%;
+
+    br {display: none;}
+
+    @include for-phone-only {
+      text-align: left;
+      font-size: 18px;
+      width: 100%;
+      br {display: block;}
+
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .consequences__content {
+    width: 100%;
+    max-width: 1350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+
+    .consequences__item__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+      @include for-phone-only {
+        font-size: 14px;
+      }
+    }
+
+    .consequences__content__item {
+      width: 100%;
+      padding: 24px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include for-phone-only {
+        padding: 12px;
+        gap: 12px;
+      }
+
+      .consequences__item__description {
+        display: grid;
+        br {display: none;}
+        grid-auto-columns: 1fr;
+        gap: 24px;
+
+        @include for-tablet-landscape-up {
+          grid-template-columns: repeat(2, 1fr);
+          br {
+            display: initial;
+          }
+        }
+        @include for-phone-only {
+          gap: 8px;
+        }
+
+        .alone__column {
+          grid-column: 1 / -1;
+          margin-top: -8px;
+        }
+
+        .consequences__desc {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .consequences__desc__list {
+            margin-top: 8px;
+
+            li {
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 120%;
+              color: #353535;
+              margin-bottom: 10px;
+
+              @include for-phone-only {
+                margin-left: 20px;
+                font-size: 12px;
+                margin-bottom: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//БЛОК Узнайте больше про ЮНИВИТ®
+
+#firts__conffeti {
+  right: 90px;
+  left: unset;
+  rotate: 189deg;
+
+  @media screen and (max-width: 1300px){
+    right: 0
+  }
+}
+.about__confetti {
+  position: absolute;
+  z-index: -99;
+  height: 50% !important;
+  top: 20px;
+  left: 0;
+  animation: levitate 5s ease-in-out infinite;
+  @keyframes levitate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 1300px){
+    height: 45% !important;
+  }
+}
+
+.mobile__confetti {
+  top: -30px;
+  position: absolute;
+  width: 55vw!important;
+  z-index: -99;
+  left: 17%;
+  animation: levitate 5s ease-in-out infinite;
+  @keyframes levitate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+.about__block {
+  display: grid;
+  grid-template-columns: minmax(200px, 450px) minmax(600px, 1fr);
+  gap: 24px;
+
+  @media screen and (max-width: 900px){
+    grid-template-columns: 1fr;
+
+    .about__block__title {
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+
+    .about__title__image {
+      display: none;
+    }
+  }
+
+
+  .about__block__title {
+    margin-top: 97px;
+
+    @media screen and (max-width: 900px){
+      margin-top: 0;
+    }
+
+    .about__title__text {
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 110%;
+      color: #0054A9;
+
+      @include for-phone-only {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 110%;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .about__title__image {
+      img {
+        margin-left: -75px;
+
+        @media screen and (max-width: 1200px){
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+
+
+  .about__block__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding-top: 110px;
+
+    @media screen and (max-width: 900px){
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      //height: 100%;
+      width: 1654px;
+      height: 703px;
+      top: -80px;
+      left: -350px;
+      z-index: -9999;
+      background-repeat: no-repeat;
+      background-image: url("/images/home/about__bg.png");
+      background-size: contain;
+    }
+
+
+    .about__item {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+
+      .about__img {
+      }
+
+      img {
+        object-position: left bottom;
+        width: auto;
+        height: 350px;
+        object-fit: contain;
+
+        @media screen and (max-width: 1200px){
+          height: 300px;
+          margin-top: 40px;
+        }
+      }
+
+      .about__item__button {
+        display: flex;
+      }
+
+      .about__item__title {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 120%;
+        color: #0054A9;
+        margin-bottom: -16px;
+
+      }
+
+      .doted__list {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 120%;
+        color: #353535;
+        margin-left: 10px;
+        max-width: 370px;
+
+        li {
+          margin-bottom: 8px;
+        }
+
+      }
+    }
+  }
+
+  //MOBILE
+
+  .about__block__content__mobile {
+    width: 100%;
+    max-width: 94vw;
+    position: relative;
+    min-height: 400px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 104vw;
+      height: 100%;
+      left: -25px;
+      z-index: -9999;
+
+      background-repeat: no-repeat;
+      background-image: url("/images/home/about__bg__mobile.png");
+      background-size: 100%;
+    }
+    @media screen and (min-width: 901px){
+      display: none;
+    }
+
+    .about-button-next, .about-button-prev {
+      position: absolute;
+      top: 25%;
+      cursor: pointer;
+      z-index: 12;
+    }
+
+    .about-button-prev {
+      left: 0;
+    }
+
+    .about-button-next {
+      right: 0;
+    }
+
+    .about__slider {
+      height: 100%;
+      width: 100%;
+
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-left: 5px;
+
+        img {
+          width: 50%;
+          min-width: 240px;
+        }
+
+        .about__item__button {
+          margin-top: 24px;
+        }
+
+        .about__item__mobile__list {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          width: 100%;
+
+          .about__item__title {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 120%;
+            color: #0054A9;
+            @include for-phone-only {
+              font-size: 20px;
+            }
+          }
+
+          .doted__list {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 120%;
+            color: #353535;
+            max-width: 90%;
+
+            @include for-phone-only {
+              font-size: 12px;
+            }
+
+            li {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
