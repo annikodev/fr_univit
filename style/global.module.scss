@@ -750,6 +750,33 @@ sub {
 }
 
 
+.bg__title {
+  background: #009FE3;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+
+  color: #FFFFFF;
+  padding: 4px 20px;
+
+  @include for-phone-only {
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+
+    sup {
+      font-size: 10px;
+      top: 4px;
+      margin-right: 3px;
+    }
+
+  }
+}
+
 
 //СКВОЗНЫЕ КОМПОНЕНТЫ
 //НОВОСТИ

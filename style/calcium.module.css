@@ -1,0 +1,364 @@
+.calcium__text__bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+@media (max-width: 599px) {
+  .calcium__text__bold {
+    font-size: 12px;
+  }
+}
+
+.calcium__text__light {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+@media (max-width: 599px) {
+  .calcium__text__light {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+
+.calcium__about {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .calcium__about {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.calcium__about .card {
+  padding: 30px 28px;
+}
+@media (max-width: 599px) {
+  .calcium__about .card {
+    padding: 16px;
+  }
+}
+.calcium__about .card .card__image__box {
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+.calcium__about .card .card__image__box img {
+  height: 190px;
+  width: auto;
+  object-fit: contain;
+  position: relative;
+  margin-right: -20px;
+  margin-left: -28px;
+  margin-bottom: -20px;
+}
+@media (max-width: 599px) {
+  .calcium__about .card .card__image__box img {
+    margin-left: -40px;
+  }
+}
+.calcium__about .card .card__image__box span {
+  max-width: 462px;
+  margin-top: 30px;
+}
+
+.calcium__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1116px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  /* or 22px */
+  color: #353535;
+}
+@media (max-width: 599px) {
+  .calcium__text {
+    gap: 8px;
+  }
+}
+
+.calcium__info {
+  display: grid;
+  max-width: 1116px;
+  grid-template-columns: 1fr;
+  margin-bottom: 100px;
+}
+@media (max-width: 599px) {
+  .calcium__info {
+    margin-bottom: 0;
+  }
+}
+.calcium__info .calcium__info__mobile__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.calcium__info .calcium__info__mobile__img img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+  image-rendering: crisp-edges;
+}
+@media (min-width: 900px) {
+  .calcium__info .calcium__info__mobile__img {
+    display: none;
+  }
+}
+.calcium__info .info__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .calcium__info .info__items {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-height: 370px;
+  }
+}
+.calcium__info .info__items:before {
+  position: absolute;
+  z-index: -9999;
+  background-repeat: no-repeat;
+  background-position: left;
+  content: url("/images/calcium/infobig1.png");
+  right: -180px;
+  object-fit: cover;
+  top: -40px;
+}
+@media screen and (max-width: 900px) {
+  .calcium__info .info__items:before {
+    display: none;
+  }
+}
+.calcium__info .info__items .info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.calcium__info .info__items .info__item img {
+  height: 28px;
+}
+@media (min-width: 900px) {
+  .calcium__info .info__items .info__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: unset;
+    flex-direction: unset;
+  }
+  .calcium__info .info__items .info__item img {
+    height: 56px;
+    aspect-ratio: 1/1;
+  }
+}
+
+.calcium__method {
+  max-width: 1116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calcium__method .calcium__method__title {
+  margin-bottom: 38px;
+}
+@media (max-width: 599px) {
+  .calcium__method .calcium__method__title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+}
+.calcium__method .calcium__method__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+@media (max-width: 599px) {
+  .calcium__method .calcium__method__block {
+    gap: 12px;
+  }
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (min-width: 900px) {
+  .calcium__method .calcium__method__block .calcium__method__item__mobile {
+    display: none;
+  }
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #0054A9;
+  padding-left: 16px;
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__content {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  height: 36px;
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__content .mobile__method1 {
+  background: #9ED6EE;
+  border-radius: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  color: #0054A9;
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__content .mobile__method1 span:nth-child(2) {
+  font-weight: 500;
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__content .mobile__method2 {
+  width: 120%;
+  transform: translateX(-50px);
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  gap: 4px;
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__content .mobile__method2 div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 110%;
+  color: #0054A9;
+}
+.calcium__method .calcium__method__block .calcium__method__item__mobile .mobile__method__content .mobile__method2 div span:nth-child(2) {
+  font-weight: 500;
+}
+.calcium__method .calcium__method__block .calcium__method__item {
+  grid-template-columns: 1.5fr 0.8fr 1fr;
+  height: 90px;
+  display: none;
+}
+@media (min-width: 900px) {
+  .calcium__method .calcium__method__block .calcium__method__item {
+    display: grid;
+  }
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item1 {
+  background: #009FE3;
+  border-radius: 155px;
+  z-index: 3;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item2 {
+  width: 140%;
+  transform: translateX(-100px);
+  background: #9ED6EE;
+  border-radius: 155px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 120px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  color: #0054A9;
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item2 span:nth-child(2) {
+  font-weight: 500;
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item3 {
+  width: 120%;
+  transform: translateX(-59px);
+  background: #FFFFFF;
+  border-radius: 155px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 38px;
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item3 .method__item3__content {
+  display: flex;
+  gap: 4px;
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item3 .method__item3__content div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  color: #0054A9;
+}
+.calcium__method .calcium__method__block .calcium__method__item .method__item3 .method__item3__content div span:nth-child(2) {
+  font-weight: 500;
+}
+.calcium__method .calcium__method__block .calcium__method__add {
+  width: 100%;
+  background: #2BA78F;
+  border-radius: 155px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  text-align: center;
+  padding: 24px;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: none;
+}
+@media (min-width: 900px) {
+  .calcium__method .calcium__method__block .calcium__method__add {
+    display: block;
+  }
+}
+.calcium__method .calcium__method__block .calcium__method__add__mobile {
+  margin-bottom: 24px;
+}
+@media (min-width: 900px) {
+  .calcium__method .calcium__method__block .calcium__method__add__mobile {
+    display: none;
+  }
+}
+.calcium__method .calcium__method__block .calcium__method__add__mobile span {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 3px 12px;
+  background: linear-gradient(0deg, #2BA78F, #2BA78F), linear-gradient(0deg, #EF7D00, #EF7D00), #EF7D00;
+  border-radius: 30px;
+}
+.calcium__method .calcium__method__block .calcium__method__add__mobile .calcium__method__add__mobile__text {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #353535;
+}
+
+/*# sourceMappingURL=calcium.module.css.map */

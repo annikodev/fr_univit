@@ -621,6 +621,30 @@ sub {
   margin-left: 15px;
 }
 
+.bg__title {
+  background: #009FE3;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+  color: #FFFFFF;
+  padding: 4px 20px;
+}
+@media (max-width: 599px) {
+  .bg__title {
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .bg__title sup {
+    font-size: 10px;
+    top: 4px;
+    margin-right: 3px;
+  }
+}
+
 .articles__block {
   width: 100%;
   width: 100%;
