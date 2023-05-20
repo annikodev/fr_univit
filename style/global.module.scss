@@ -5,7 +5,7 @@
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 700;
-  src: local("Proxima Soft"),
+  src:
   url("/fonts/ProximaSoft-SemiBold.woff2") format("woff2"),
   url("/fonts/ProximaSoft-SemiBold.woff") format("woff");
 }
@@ -13,7 +13,7 @@
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 400;
-  src: local("Proxima Soft"),
+  src:
   url("/fonts/ProximaSoft-Regular.woff2") format("woff2"),
   url("/fonts/ProximaSoft-Regular.woff") format("woff");
 }
@@ -21,7 +21,7 @@
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 300;
-  src: local("Proxima Soft"),
+  src:
   url("/fonts/ProximaSoft-Light.woff2") format("woff2"),
   url("/fonts/ProximaSoft-Light.woff") format("woff");
 }
@@ -37,7 +37,7 @@
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 100;
-  src: local("Proxima Soft"),
+  src:
   url("/fonts/ProximaSoft-Thin.woff2") format("woff2"),
   url("/fonts/ProximaSoft-Thin.woff") format("woff");
 }
@@ -225,6 +225,7 @@ main {
 
         .expanded__link__button {
           cursor: pointer;
+          white-space: nowrap;
         }
 
         .header__expanded__link {
@@ -348,9 +349,6 @@ main {
     display: none;
   }
 }
-
-
-
 .header__mobile__menu {
   position: fixed;
   height: 100vh;
@@ -452,6 +450,7 @@ main {
 
 
 .fixme {
+  display: none;
   //position: absolute;
   width: 100vw;
   height: 90%;
@@ -464,6 +463,10 @@ main {
   object-fit: cover;
   z-index: -99999;
 }
+
+
+
+
 //FOOTER STYLE
 .footer {
   width: 100%;
@@ -479,11 +482,11 @@ main {
 
 
   .footer__alert {
-    background: #DFDFDF;
-    display: flex;
-    justify-content: center;
-    padding-top: 14px;
-    padding-bottom: 10px;
+    //background: #DFDFDF;
+    //display: flex;
+    //justify-content: center;
+    //padding-top: 14px;
+    //padding-bottom: 10px;
 
     .footer__alert__content {
       @include basicBlock;
@@ -639,6 +642,14 @@ main {
 
 
 //ВСПОМОГАТЕЛЬНЫЕ
+
+.animated__title {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+
 .for__tablet__portrait {
   display: none;
 

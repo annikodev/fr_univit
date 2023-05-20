@@ -299,20 +299,40 @@
     }
 
 
+
     .about__item {
       display: flex;
       flex-direction: column;
       gap: 32px;
+      position: relative;
 
-
-      .about__img {
+      &:hover {
+        .about__hover {
+          opacity: 1;
+        }
       }
+
+      .about__hover {
+        transition: ease-in-out 0.3s;
+        position: absolute;
+        //background: red;
+        left: 20px;
+        top: 20px;
+        opacity: 0;
+        z-index: -9999;
+        width: 80%;
+        height: 350px;
+        background: #FFD818;
+        filter: blur(77.5px);
+      }
+
 
       img {
         object-position: left bottom;
         width: auto;
         height: 350px;
         object-fit: contain;
+
 
         @media screen and (max-width: 1200px){
           height: 300px;

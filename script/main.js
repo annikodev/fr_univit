@@ -50,8 +50,39 @@ $(document).ready(function() {
 
 });
 
+// $(document).ready(function() {
+//   $(window).scroll(function() {
+//     let windowHeight = $(window).height();
+//     let scrollPos = $(window).scrollTop();
+//     let elementPos = $('.animated__title').offset().top;
+//
+//     // Проверяем, находится ли элемент в зоне видимости
+//     if (scrollPos > elementPos - windowHeight + 200) {
+//       $('.animated__title').css('opacity', '1');
+//     }
+//   });
+// });
 
 
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var windowHeight = $(window).height();
+    var scrollPos = $(window).scrollTop();
+
+    // Для каждого элемента с классом .fade-in
+    $('.animated__title').each(function() {
+      var elementPos = $(this).offset().top;
+
+      // Проверяем, находится ли элемент в зоне видимости
+      if (scrollPos > elementPos - windowHeight + 40) {
+        $(this).css({
+          'opacity': '1',
+          'transform': 'translateY(0)'
+        });
+      }
+    });
+  });
+});
 
 
 

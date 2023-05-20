@@ -3,25 +3,25 @@
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 700;
-  src: local("Proxima Soft"), url("/fonts/ProximaSoft-SemiBold.woff2") format("woff2"), url("/fonts/ProximaSoft-SemiBold.woff") format("woff");
+  src: url("/fonts/ProximaSoft-SemiBold.woff2") format("woff2"), url("/fonts/ProximaSoft-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 400;
-  src: local("Proxima Soft"), url("/fonts/ProximaSoft-Regular.woff2") format("woff2"), url("/fonts/ProximaSoft-Regular.woff") format("woff");
+  src: url("/fonts/ProximaSoft-Regular.woff2") format("woff2"), url("/fonts/ProximaSoft-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 300;
-  src: local("Proxima Soft"), url("/fonts/ProximaSoft-Light.woff2") format("woff2"), url("/fonts/ProximaSoft-Light.woff") format("woff");
+  src: url("/fonts/ProximaSoft-Light.woff2") format("woff2"), url("/fonts/ProximaSoft-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 100;
-  src: local("Proxima Soft"), url("/fonts/ProximaSoft-Thin.woff2") format("woff2"), url("/fonts/ProximaSoft-Thin.woff") format("woff");
+  src: url("/fonts/ProximaSoft-Thin.woff2") format("woff2"), url("/fonts/ProximaSoft-Thin.woff") format("woff");
 }
 html, body {
   height: 100%;
@@ -164,6 +164,7 @@ main:after {
 }
 .header .header__nav .header__link__list .header__expanded__link__wrapper .expanded__link__button {
   cursor: pointer;
+  white-space: nowrap;
 }
 .header .header__nav .header__link__list .header__expanded__link__wrapper .header__expanded__link {
   display: flex;
@@ -339,6 +340,7 @@ main:after {
 }
 
 .fixme {
+  display: none;
   width: 100vw;
   height: 90%;
   margin-top: -32%;
@@ -355,13 +357,6 @@ main:after {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.footer .footer__alert {
-  background: #DFDFDF;
-  display: flex;
-  justify-content: center;
-  padding-top: 14px;
-  padding-bottom: 10px;
 }
 .footer .footer__alert .footer__alert__content {
   max-width: 1386px;
@@ -521,6 +516,12 @@ main:after {
     font-size: 8px;
     gap: 2px;
   }
+}
+
+.animated__title {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .for__tablet__portrait {
