@@ -1,0 +1,298 @@
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.aqua__heading {
+  display: flex;
+  height: 540px;
+  position: relative;
+  overflow: visible;
+  justify-content: flex-end;
+}
+.aqua__heading .heading__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 600px;
+  z-index: 3;
+}
+.aqua__heading .heading__title .heading__title__item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  color: #353535;
+}
+@media screen and (max-width: 1000px) {
+  .aqua__heading .heading__title .heading__title__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .aqua__heading .heading__title .heading__title__item img {
+    height: 22px;
+  }
+}
+.aqua__heading .heading__title h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #0054A9;
+}
+@media screen and (max-width: 1000px) {
+  .aqua__heading .heading__title h1 {
+    display: none;
+  }
+}
+.aqua__heading .image__box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("/images/aqua/headbg1.png");
+}
+.aqua__heading .image__box .image__box__confetti {
+  position: absolute;
+  z-index: 1;
+  width: 120%;
+  margin-right: 200px;
+  margin-bottom: 40px;
+  animation: levitate 5s ease-in-out infinite;
+}
+.aqua__heading .image__box .image__box__content {
+  max-height: 80%;
+  margin-right: 220px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.box {
+  max-width: 1116px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  /* or 22px */
+  color: #353535;
+}
+
+.title__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title__box div:nth-child(n+2) {
+  margin-top: -6px;
+}
+.title__box span {
+  font-weight: 700;
+  font-size: 35px !important;
+  line-height: 120%;
+}
+
+.aqua__text__box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.aqua__text__box .aqua__first__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aqua__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media (min-width: 1200px) {
+  .aqua__cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.aqua__cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 12px;
+}
+@media (max-width: 599px) {
+  .aqua__cards .card {
+    padding: 12px;
+  }
+}
+.aqua__cards .card img {
+  width: 100%;
+  max-width: 154px;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 599px) {
+  .aqua__cards .card img {
+    width: 64px;
+    height: 64px;
+  }
+}
+.aqua__cards .card span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: #353535;
+  text-align: center;
+}
+@media (max-width: 599px) {
+  .aqua__cards .card span {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 110%;
+  }
+}
+
+.bg__box {
+  padding: 24px;
+  background: rgba(0, 159, 227, 0.25);
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #0054A9;
+}
+
+.aqua__list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+}
+.aqua__list:before {
+  position: absolute;
+  z-index: -9999;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
+  height: 100px;
+  width: 100px;
+  right: 600px;
+  top: -100px;
+  content: url("/images/aqua/aquabg1.png");
+}
+.aqua__list .aqua__list__item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.aqua__list .aqua__list__item span {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  color: #353535;
+}
+
+.aqua__method {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.aqua__method .centred {
+  display: grid;
+  place-items: center;
+}
+.aqua__method .bg__dark {
+  background: #0054A9;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16px;
+}
+.aqua__method .bg__light {
+  background: #2BA78F;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px;
+}
+.aqua__method .aqua__method__bottom__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+  gap: 8px;
+}
+.aqua__method .aqua__method__bottom__block img {
+  width: 28px;
+  height: 40px;
+}
+.aqua__method .aqua__method__bottom__block div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.aqua__method .aqua__method__bottom__block div span {
+  text-align: left;
+}
+.aqua__method .aqua__first__method {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.aqua__method .aqua__first__method .aqua__first__method__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.aqua__method .aqua__first__method .aqua__first__method__content .aqua__first__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.aqua__method .aqua__first__method .aqua__first__method__content .aqua__first__column .aqua__first__column__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.aqua__method .aqua__first__method .aqua__first__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aqua__method .aqua__first__method .aqua__first__bottom .aqua__first__bottom__column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*# sourceMappingURL=aqua.module.css.map */
