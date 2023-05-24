@@ -1,6 +1,7 @@
 @import "shared.module";
 
 
+
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
@@ -110,6 +111,10 @@ article, section {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+
+}
 
 main {
   display: flex;

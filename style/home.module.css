@@ -12,10 +12,16 @@
 .slider__wrapper {
   width: calc(100% + 94px);
   max-width: 1440px;
+  max-height: 480px;
 }
 @media screen and (max-width: 1500px) {
   .slider__wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .slider__wrapper {
+    max-height: 200px;
   }
 }
 .slider__wrapper .slider {
@@ -29,7 +35,12 @@
 .slider__wrapper .slider .swiper-slide img {
   border-radius: 12px;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+@media screen and (max-width: 600px) {
+  .slider__wrapper .slider .swiper-slide img {
+    object-fit: cover;
+  }
 }
 .slider__wrapper .slider .swiper-pagination .swiper-pagination-bullet {
   background: #FFFFFF;

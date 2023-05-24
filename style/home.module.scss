@@ -6,6 +6,13 @@
     width: 100%;
   }
   max-width: 1440px;
+  max-height: 480px;
+
+
+  @include for-phone-only {
+    max-height: 200px;
+  }
+
 
   .slider {
     height: 100%;
@@ -18,7 +25,16 @@
       img {
         border-radius: 12px;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+
+        @media screen and (max-width: 600px){
+          object-fit: cover;
+        }
+
+        @include for-phone-only {
+
+        }
+
       }
     }
 

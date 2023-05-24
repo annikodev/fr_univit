@@ -95,7 +95,7 @@ let swiper = new Swiper(".slider", {
     clickable: true,
   },
   autoplay: {
-    delay: 7500,
+    delay: 15000,
     disableOnInteraction: false,
   },
 });

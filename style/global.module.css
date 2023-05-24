@@ -59,6 +59,10 @@ article, section {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
