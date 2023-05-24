@@ -1,5 +1,8 @@
 @import "shared.module";
 
+sup {
+  cursor: pointer;
+}
 
 
 @font-face {
@@ -279,8 +282,10 @@ main {
             line-height: 120%;
             color: #0054A9;
 
+
             a {
               text-decoration-line: underline;
+              text-transform: initial;
               pointer-events: initial;
 
               &:hover {

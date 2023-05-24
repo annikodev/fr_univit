@@ -84,6 +84,14 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  // Получаем все элементы <sup> на странице и добавляем им функцию обработчика события click
+  $('sup').click(function() {
+    $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
+  });
+});
+
+
 
 
 
