@@ -19,24 +19,24 @@ sup {
   font-style: normal;
   font-weight: 700;
   src:
-  url("fonts/ProximaSoft-SemiBold.woff2") format("woff2"),
-  url("fonts/ProximaSoft-SemiBold.woff") format("woff");
+          url("fonts/ProximaSoft-SemiBold.woff2") format("woff2"),
+          url("fonts/ProximaSoft-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 400;
   src:
-  url("fonts/ProximaSoft-Regular.woff2") format("woff2"),
-  url("fonts/ProximaSoft-Regular.woff") format("woff");
+          url("fonts/ProximaSoft-Regular.woff2") format("woff2"),
+          url("fonts/ProximaSoft-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 300;
   src:
-  url("fonts/ProximaSoft-Light.woff2") format("woff2"),
-  url("fonts/ProximaSoft-Light.woff") format("woff");
+          url("fonts/ProximaSoft-Light.woff2") format("woff2"),
+          url("fonts/ProximaSoft-Light.woff") format("woff");
 }
 //@font-face {
 //  font-family: "Proxima Soft";
@@ -51,8 +51,8 @@ sup {
   font-style: normal;
   font-weight: 100;
   src:
-  url("fonts/ProximaSoft-Thin.woff2") format("woff2"),
-  url("fonts/ProximaSoft-Thin.woff") format("woff");
+          url("fonts/ProximaSoft-Thin.woff2") format("woff2"),
+          url("fonts/ProximaSoft-Thin.woff") format("woff");
 }
 
 //@font-face {
@@ -187,7 +187,7 @@ main {
     display: flex;
     align-items: center;
     gap: 24px;
-    
+
 
 
     @media screen and (max-width: 1200px){
@@ -472,7 +472,7 @@ main {
 
 
 .fixme {
-  display: none;
+  //display: none;
   //position: absolute;
   width: 100vw;
   height: 90%;
