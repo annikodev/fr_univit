@@ -14,10 +14,14 @@ sup {
   cursor: pointer;
 }
 
+.cloud-top {
+  display: none;
+}
 @media (max-width: 599px) {
   .cloud-top {
-    margin-top: 30px;
-    margin-bottom: -100px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -120px;
   }
 }
 
