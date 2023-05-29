@@ -4,6 +4,11 @@ sup {
   cursor: pointer;
 }
 
+
+body, html{
+  overflow-x: hidden;
+}
+
 .cloud-top {
   display: none;
   width: 100%;

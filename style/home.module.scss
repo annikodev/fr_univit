@@ -1,5 +1,20 @@
 @import "shared.module";
 
+
+.slider__mobile {
+  display: none;
+
+  @include for-phone-only {
+    display: block;
+  }
+}
+
+.slider__desk {
+  @include for-phone-only {
+    display: none;
+  }
+}
+
 .slider__wrapper {
   width: calc(100% + 94px);
   @media screen and (max-width: 1500px){
@@ -318,6 +333,7 @@
       left: -350px;
       z-index: -99;
       background-repeat: no-repeat;
+      overflow: hidden;
 
       background-image: url("../images/home/about__bg.png");
       background-size: contain;

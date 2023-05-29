@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style/home.module.css">
   <title>Юнивит</title>
 </head>
-<body>
+<body  class="container">
 <img class="cloud-top" src="images/shared/mobile__top.png" alt=""/>
 <!-- <img src="images/home/cloud_lng.png"> -->
 <!--HEADER START-->
@@ -144,14 +144,21 @@
 <!--HEADER END-->
 
 
+
+
+
+
+
+
+
 <main>
 
-  <section class="slider__wrapper">
+  <section class="slider__wrapper slider__desk">
     <div class="swiper slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/home/slide1.png" alt=""></div>
-        <div class="swiper-slide"><img src="images/home/slide2.png" alt=""></div>
-        <div class="swiper-slide"><img src="images/home/slide3.png" alt=""></div>
+        <div class="swiper-slide desktop__slide"><img src="images/home/slide1.png" alt=""></div>
+        <div class="swiper-slide desktop__slide"><img src="images/home/slide2.png" alt=""></div>
+        <div class="swiper-slide desktop__slide"><img src="images/home/slide3.png" alt=""></div>
       </div>
       <svg class="slider__button swiper-button-prev" width="22" height="35" viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20 2L4.5 17.5L20 33" stroke="#0054A9" stroke-width="5"/>
@@ -160,6 +167,17 @@
         <path d="M2 33L17.5 17.5L2 2" stroke="#0054A9" stroke-width="5"/>
       </svg>
 
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="slider__wrapper slider__mobile">
+    <div class="swiper slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide desktop__slide"><img src="images/home/ms1.png" alt=""></div>
+        <div class="swiper-slide desktop__slide"><img src="images/home/ms2.png" alt=""></div>
+        <div class="swiper-slide desktop__slide"><img src="images/home/ms3.png" alt=""></div>
+      </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
@@ -459,6 +477,18 @@
 </main>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <img class="fixme" src="images/body__desk__bottom.png" alt="">
 <img class="cloud-bot" src="images/shared/mobile__bot.png" alt=""/>
 
@@ -555,10 +585,13 @@
 </footer>
 <!--FOOTER END-->
 
+<script src="script/jquery-3.7.0.min.js"></script>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="script/jquery-3.7.0.min.js"></script>
 <script src="script/main.js"></script>
+
+<script></script>
 </body>
 </html>

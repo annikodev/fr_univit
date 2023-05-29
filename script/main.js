@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $(window).scroll(function() {
+  $('.container').scroll(function() {
     var windowHeight = $(window).height();
     var scrollPos = $(window).scrollTop();
 
@@ -83,6 +83,8 @@ $(document).ready(function() {
     });
   });
 });
+
+
 
 $(document).ready(function() {
   // Получаем все элементы <sup> на странице и добавляем им функцию обработчика события click
