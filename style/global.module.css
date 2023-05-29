@@ -23,7 +23,7 @@ sup {
   .cloud-top {
     display: block;
     margin-top: 10px;
-    margin-bottom: -130px;
+    margin-bottom: -40%;
   }
 }
 
@@ -34,7 +34,8 @@ sup {
 @media (max-width: 599px) {
   .cloud-bot {
     display: block;
-    margin-top: -130px;
+    margin-top: -50%;
+    z-index: -99999;
   }
 }
 

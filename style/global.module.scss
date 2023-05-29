@@ -12,7 +12,7 @@ sup {
   @include for-phone-only {
     display: block;
     margin-top: 10px;
-    margin-bottom: -130px;
+    margin-bottom: -40%;
   }
 }
 
@@ -22,7 +22,8 @@ sup {
 
   @include for-phone-only {
     display: block;
-    margin-top: -130px;
+    margin-top: -50%;
+    z-index: -99999;
   }
 }
 
