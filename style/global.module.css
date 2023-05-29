@@ -16,12 +16,25 @@ sup {
 
 .cloud-top {
   display: none;
+  width: 100%;
+  object-fit: contain;
 }
 @media (max-width: 599px) {
   .cloud-top {
     display: block;
     margin-top: 10px;
-    margin-bottom: -120px;
+    margin-bottom: -130px;
+  }
+}
+
+.cloud-bot {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 599px) {
+  .cloud-bot {
+    display: block;
+    margin-top: -130px;
   }
 }
 

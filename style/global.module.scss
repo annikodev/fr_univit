@@ -6,11 +6,23 @@ sup {
 
 .cloud-top {
   display: none;
+  width: 100%;
+  object-fit: contain;
 
   @include for-phone-only {
     display: block;
     margin-top: 10px;
-    margin-bottom: -120px;
+    margin-bottom: -130px;
+  }
+}
+
+.cloud-bot {
+  display: none;
+  width: 100%;
+
+  @include for-phone-only {
+    display: block;
+    margin-top: -130px;
   }
 }
 
