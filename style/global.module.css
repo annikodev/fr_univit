@@ -14,29 +14,36 @@ sup {
   cursor: pointer;
 }
 
+@media (max-width: 599px) {
+  .cloud-top {
+    margin-top: 30px;
+    margin-bottom: -100px;
+  }
+}
+
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ProximaSoft-SemiBold.woff2") format("woff2"), url("/fonts/ProximaSoft-SemiBold.woff") format("woff");
+  src: url("fonts/ProximaSoft-SemiBold.woff2") format("woff2"), url("fonts/ProximaSoft-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ProximaSoft-Regular.woff2") format("woff2"), url("/fonts/ProximaSoft-Regular.woff") format("woff");
+  src: url("fonts/ProximaSoft-Regular.woff2") format("woff2"), url("fonts/ProximaSoft-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/ProximaSoft-Light.woff2") format("woff2"), url("/fonts/ProximaSoft-Light.woff") format("woff");
+  src: url("fonts/ProximaSoft-Light.woff2") format("woff2"), url("fonts/ProximaSoft-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 100;
-  src: url("/fonts/ProximaSoft-Thin.woff2") format("woff2"), url("/fonts/ProximaSoft-Thin.woff") format("woff");
+  src: url("fonts/ProximaSoft-Thin.woff2") format("woff2"), url("fonts/ProximaSoft-Thin.woff") format("woff");
 }
 html, body {
   height: 100%;
@@ -44,7 +51,7 @@ html, body {
 }
 
 body {
-  background: rgba(0, 168, 255, 0.1);
+  background: rgba(0, 168, 255, 0.0588235294);
   font-family: "Proxima Soft", sans-serif;
   display: flex;
   flex-direction: column;
@@ -282,7 +289,8 @@ main:after {
 .header__mobile__menu {
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  left: 0;
+  width: 83vw;
   background: white;
   z-index: 99999;
   display: flex;
@@ -313,15 +321,11 @@ main:after {
 .header__mobile__menu .mobile__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
   color: #0054A9;
   margin-top: 12px;
-}
-.header__mobile__menu .mobile__expanded__menu {
-  display: none;
 }
 .header__mobile__menu .mobile__expanded__menu div:not(:last-child) {
   margin-bottom: 12px;

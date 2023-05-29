@@ -4,46 +4,52 @@ sup {
   cursor: pointer;
 }
 
+.cloud-top {
+  @include for-phone-only {
+    margin-top: 30px;
+    margin-bottom: -100px;
+  }
+}
 
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 700;
   src:
-  url("/fonts/ProximaSoft-SemiBold.woff2") format("woff2"),
-  url("/fonts/ProximaSoft-SemiBold.woff") format("woff");
+  url("fonts/ProximaSoft-SemiBold.woff2") format("woff2"),
+  url("fonts/ProximaSoft-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 400;
   src:
-  url("/fonts/ProximaSoft-Regular.woff2") format("woff2"),
-  url("/fonts/ProximaSoft-Regular.woff") format("woff");
+  url("fonts/ProximaSoft-Regular.woff2") format("woff2"),
+  url("fonts/ProximaSoft-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 300;
   src:
-  url("/fonts/ProximaSoft-Light.woff2") format("woff2"),
-  url("/fonts/ProximaSoft-Light.woff") format("woff");
+  url("fonts/ProximaSoft-Light.woff2") format("woff2"),
+  url("fonts/ProximaSoft-Light.woff") format("woff");
 }
 //@font-face {
 //  font-family: "Proxima Soft";
 //  font-style: normal;
 //  font-weight: 200;
 //  src: local("Proxima Soft"),
-//  url("/fonts/ProximaSoft-Light.woff2") format("woff2"),
-//  url("/fonts/ProximaSoft-Light.woff") format("woff");
+//  url("fonts/ProximaSoft-Light.woff2") format("woff2"),
+//  url("fonts/ProximaSoft-Light.woff") format("woff");
 //}
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: 100;
   src:
-  url("/fonts/ProximaSoft-Thin.woff2") format("woff2"),
-  url("/fonts/ProximaSoft-Thin.woff") format("woff");
+  url("fonts/ProximaSoft-Thin.woff2") format("woff2"),
+  url("fonts/ProximaSoft-Thin.woff") format("woff");
 }
 
 //@font-face {
@@ -51,8 +57,8 @@ sup {
 //  font-style: normal;
 //  font-weight: 500;
 //  src: local("Proxima Soft"),
-//  url("/fonts/ProximaSoft-Medium.woff2") format("woff2"),
-//  url("/fonts/ProximaSoft-Medium.woff") format("woff");
+//  url("fonts/ProximaSoft-Medium.woff2") format("woff2"),
+//  url("fonts/ProximaSoft-Medium.woff") format("woff");
 //}
 
 
@@ -61,24 +67,24 @@ sup {
 //  font-style: normal;
 //  font-weight: 700;
 //  src: local("Proxima Soft"),
-//  url("/fonts/ProximaSoft-Bold.woff2") format("woff2"),
-//  url("/fonts/ProximaSoft-Bold.woff") format("woff");
+//  url("fonts/ProximaSoft-Bold.woff2") format("woff2"),
+//  url("fonts/ProximaSoft-Bold.woff") format("woff");
 //}
 //@font-face {
 //  font-family: "Proxima Soft";
 //  font-style: normal;
 //  font-weight: 700;
 //  src: local("Proxima Soft"),
-//  url("/fonts/ProximaSoft-ExtraBold.woff2") format("woff2"),
-//  url("/fonts/ProximaSoft-ExtraBold.woff") format("woff");
+//  url("fonts/ProximaSoft-ExtraBold.woff2") format("woff2"),
+//  url("fonts/ProximaSoft-ExtraBold.woff") format("woff");
 //}
 //@font-face {
 //  font-family: "Proxima Soft";
 //  font-style: normal;
 //  font-weight: 900;
 //  src: local("Proxima Soft"),
-//  url("/fonts/ProximaSoft-Black.woff2") format("woff2"),
-//  url("/fonts/ProximaSoft-Black.woff") format("woff");
+//  url("fonts/ProximaSoft-Black.woff2") format("woff2"),
+//  url("fonts/ProximaSoft-Black.woff") format("woff");
 //}
 
 
@@ -91,7 +97,9 @@ html, body {
 }
 
 body {
-  background: rgba(0, 168, 255, 0.1);
+  // background: rgba(0, 168, 255, 0.1);
+  background: #00A8FF0F;
+
   font-family: 'Proxima Soft', sans-serif;
   display: flex;
   flex-direction: column;
@@ -362,7 +370,8 @@ main {
 .header__mobile__menu {
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  left: 0;
+  width: 83vw;
   background: white;
   z-index: 99999;
   display: flex;
@@ -398,7 +407,7 @@ main {
   .mobile__list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    //gap: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -407,7 +416,7 @@ main {
   }
 
   .mobile__expanded__menu {
-    display: none;
+    //display: none;
 
     div:not(:last-child) {
       margin-bottom: 12px;

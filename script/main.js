@@ -98,6 +98,7 @@ $(document).ready(function() {
 //SLIDER
 let swiper = new Swiper(".slider", {
   loop: true,
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -105,6 +106,10 @@ let swiper = new Swiper(".slider", {
   autoplay: {
     delay: 15000,
     disableOnInteraction: false,
+  },
+   navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 var swiper2 = new Swiper(".about__slider", {
