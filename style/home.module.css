@@ -334,10 +334,10 @@
   -moz-transform: translate3d(0, 0, 0);
   transition: ease-in-out 0.3s;
   position: absolute;
-  left: 20px;
+  left: -30px;
   top: 20px;
   opacity: 0;
-  z-index: -9999;
+  z-index: -90;
   width: 80%;
   height: 280px;
   background: #FFD818;
