@@ -315,7 +315,7 @@
   left: -350px;
   z-index: -99;
   background-repeat: no-repeat;
-  background-image: url("/images/home/about__bg.png");
+  background-image: url("../images/home/about__bg.png");
   background-size: contain;
 }
 .about__block .about__block__content .about__item {
@@ -393,7 +393,7 @@
   left: -25px;
   z-index: -9999;
   background-repeat: no-repeat;
-  background-image: url("/images/home/about__bg__mobile.png");
+  background-image: url("../images/home/about__bg__mobile.png");
   background-size: 100%;
 }
 @media screen and (min-width: 901px) {

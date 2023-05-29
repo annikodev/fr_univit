@@ -139,7 +139,7 @@
   z-index: -9999;
   background-repeat: no-repeat;
   background-position: left;
-  content: url("/images/calcium/infobig1.png");
+  content: url("../images/calcium/infobig1.png");
   right: -180px;
   object-fit: cover;
   top: -40px;

@@ -66,7 +66,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("/images/aqua/headbg1.png");
+  background-image: url("../images/aqua/headbg1.png");
 }
 .aqua__heading .image__box .image__box__confetti {
   position: absolute;
@@ -198,7 +198,7 @@
   width: 100px;
   right: 600px;
   top: -100px;
-  content: url("/images/aqua/aquabg1.png");
+  content: url("../images/aqua/aquabg1.png");
 }
 .aqua__list .aqua__list__item {
   display: flex;
