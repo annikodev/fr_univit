@@ -626,7 +626,7 @@ main:after {
 sup {
   top: -0.5em;
   position: relative;
-  font-size: 75%;
+  font-size: 65%;
   line-height: 0;
   vertical-align: baseline;
 }
@@ -686,6 +686,29 @@ sub {
     font-size: 10px;
     top: 4px;
     margin-right: 3px;
+  }
+}
+
+.title__perv {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #0054A9;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+@media (max-width: 599px) {
+  .title__perv {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    gap: 8px;
+  }
+  .title__perv svg {
+    height: 10px;
   }
 }
 

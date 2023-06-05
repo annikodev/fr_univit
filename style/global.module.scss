@@ -749,7 +749,7 @@ main {
 sup {
   top: -0.5em;
   position: relative;
-  font-size: 75%;
+  font-size: 65%;
   line-height: 0;
   vertical-align: baseline;
 }
@@ -820,6 +820,27 @@ sub {
 
 //СКВОЗНЫЕ КОМПОНЕНТЫ
 //НОВОСТИ
+.title__perv {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #0054A9;
+  cursor: pointer;
+  margin-bottom: 8px;
+
+  @include for-phone-only {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    gap: 8px;
+    svg {
+      height: 10px;
+    }
+  }
+}
 
 .articles__block {
   width: 100%;
@@ -835,6 +856,9 @@ sub {
     display: block;
     text-align: left;
     width: 100%;
+
+
+
 
     h1 {
       font-weight: 700;
