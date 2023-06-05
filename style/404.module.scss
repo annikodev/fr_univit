@@ -1,0 +1,63 @@
+@import "shared.module";
+
+.not__found__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 100px 0;
+  position: relative;
+
+  @include for-phone-only {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: url("../images/shared/404bg.png") no-repeat center;
+    height: 100%;
+    width: 140%;
+    z-index: -100;
+    top: -200px;
+
+    @include for-phone-only {
+      top: 0;
+      width: 120%;
+      height: 120%;
+      opacity: 0.4;
+    }
+  }
+
+  .not__found__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+    color: #0054A9;
+    margin-top: -24px;
+
+    @include for-phone-only {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+
+  }
+
+  .not__found__title {
+    font-weight: 700;
+    font-size: 350px;
+    line-height: 350px;
+    text-align: center;
+    color: #0054A9;
+
+    @include for-phone-only {
+      font-weight: 700;
+      font-size: 120px;
+      line-height: 110%;
+    }
+
+  }
+}
