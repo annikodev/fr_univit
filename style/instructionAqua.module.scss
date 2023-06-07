@@ -1,0 +1,308 @@
+@import 'shared.module';
+.instruction__title {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  .title {
+    padding:8px 32px ;
+    background: #009FE3;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  @media screen and (max-width: 900px){
+    gap: 4px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: -12px;
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 110%;
+      color: #0054A9;
+      padding: unset;
+      background: none;
+
+    }
+  }
+}
+
+.instruction__content {
+  align-items: center;
+  gap: 52px;
+  margin-top: -80px;
+  padding-top: 40px;
+  display: flex;
+  margin-bottom: 72px;
+  position: relative;
+
+
+
+  @include for-phone-only {
+    margin-top: -120px;
+    width: calc(100% + 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-height: 900px){
+
+
+  }
+  &:before {
+    content: '';
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    z-index: -999;
+    left: -200px;
+    background: url("../images/calcium/inst__bg.png") no-repeat;
+    @media screen and (max-width: 900px) {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      //background: red;
+      height: 100%;
+      max-height: 500px;
+      background-image: url("../images/calcium/bg__modile.png");
+      background-position: center 70px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      image-rendering: pixelated;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  .instruction__about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    bottom: -0px;
+    .button__yellow {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+
+    .about__lint {
+      span:nth-child(1) {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #353535;
+        @include for-phone-only {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 120%;
+          /* or 14px */
+
+
+          color: #353535;
+
+        }
+      }
+      span:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #353535;
+        @include for-phone-only {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 120%;
+          /* or 14px */
+
+
+          color: #353535;
+        }
+      }
+
+    }
+  }
+
+  .instruction__image {
+    position: relative;
+    margin-top: 40px;
+
+    a {
+      display: none;
+      @media screen and (max-width: 900px){
+        display: block;
+        margin-top: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px;
+        white-space: nowrap;
+        padding: 12px 17px;
+      }
+    }
+
+    .confetti {
+      left: 0;
+      z-index: -999;
+      position: absolute;
+      scale: 1.4;
+      @include levitateConfetti();
+
+      @media screen and (max-width: 400px){
+        top: 40px;
+      }
+
+
+    }
+
+    .image {
+      height:auto;
+      position: relative;
+      max-width: 400px;
+      width: 450px;
+
+      @include for-phone-only {
+        width: 250px;
+      }
+
+      @media screen and (max-width: 400px){
+        width: 180px;
+      }
+    }
+  }
+}
+
+
+
+.answer__block__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1116px;
+  gap: 16px;
+
+
+  @include for-phone-only {
+    gap: 8px;
+    margin-top: -32px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
+    @include for-phone-only {
+      padding: 12px;
+    }
+
+
+    .card__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      .open {
+        transform: rotate(180deg);
+      }
+
+      svg {
+        @include for-phone-only {
+          width: 14px;
+          height: 16px;
+        }
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 120%;
+        color: #0054A9;
+
+        @include for-phone-only {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 120%;
+        }
+      }
+    }
+
+    .card__body {
+      margin-top: 18px;
+      display: none;
+
+      @include for-phone-only {
+        font-size: 12px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.about__company {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  @include for-phone-only {
+    flex-direction: column;
+  }
+
+  .company__owner, .company__fabirc {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+
+    span {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: #353535;
+      @include for-phone-only {
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        /* or 14px */
+
+
+        color: #353535;
+      }
+    }
+
+    span:nth-child(1) {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+      color: #353535;
+      margin-bottom: 6px;
+      @include for-phone-only {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 120%;
+        /* or 14px */
+
+
+        color: #353535;
+
+      }
+    }
+  }
+}

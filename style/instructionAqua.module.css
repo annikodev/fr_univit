@@ -1,0 +1,293 @@
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.instruction__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.instruction__title .title {
+  padding: 8px 32px;
+  background: #009FE3;
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 900px) {
+  .instruction__title {
+    gap: 4px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: -12px;
+  }
+  .instruction__title .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110%;
+    color: #0054A9;
+    padding: unset;
+    background: none;
+  }
+}
+
+.instruction__content {
+  align-items: center;
+  gap: 52px;
+  margin-top: -80px;
+  padding-top: 40px;
+  display: flex;
+  margin-bottom: 72px;
+  position: relative;
+}
+@media (max-width: 599px) {
+  .instruction__content {
+    margin-top: -120px;
+    width: calc(100% + 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.instruction__content:before {
+  content: "";
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: -999;
+  left: -200px;
+  background: url("../images/calcium/inst__bg.png") no-repeat;
+}
+@media screen and (max-width: 900px) {
+  .instruction__content:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    max-height: 500px;
+    background-image: url("../images/calcium/bg__modile.png");
+    background-position: center 70px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    image-rendering: pixelated;
+  }
+}
+@media screen and (max-width: 900px) {
+  .instruction__content {
+    flex-direction: column;
+  }
+}
+.instruction__content .instruction__about {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  bottom: 0px;
+}
+@media screen and (max-width: 900px) {
+  .instruction__content .instruction__about .button__yellow {
+    display: none;
+  }
+}
+.instruction__content .instruction__about .about__lint span:nth-child(1) {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+@media (max-width: 599px) {
+  .instruction__content .instruction__about .about__lint span:nth-child(1) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    color: #353535;
+  }
+}
+.instruction__content .instruction__about .about__lint span:nth-child(2) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+@media (max-width: 599px) {
+  .instruction__content .instruction__about .about__lint span:nth-child(2) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    color: #353535;
+  }
+}
+.instruction__content .instruction__image {
+  position: relative;
+  margin-top: 40px;
+}
+.instruction__content .instruction__image a {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .instruction__content .instruction__image a {
+    display: block;
+    margin-top: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    padding: 12px 17px;
+  }
+}
+.instruction__content .instruction__image .confetti {
+  left: 0;
+  z-index: -999;
+  position: absolute;
+  scale: 1.4;
+  animation: levitate 5s ease-in-out infinite;
+}
+@media screen and (max-width: 400px) {
+  .instruction__content .instruction__image .confetti {
+    top: 40px;
+  }
+}
+.instruction__content .instruction__image .image {
+  height: auto;
+  position: relative;
+  max-width: 400px;
+  width: 450px;
+}
+@media (max-width: 599px) {
+  .instruction__content .instruction__image .image {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .instruction__content .instruction__image .image {
+    width: 180px;
+  }
+}
+
+.answer__block__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1116px;
+  gap: 16px;
+}
+@media (max-width: 599px) {
+  .answer__block__wrapper {
+    gap: 8px;
+    margin-top: -32px;
+  }
+}
+.answer__block__wrapper .card {
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 599px) {
+  .answer__block__wrapper .card {
+    padding: 12px;
+  }
+}
+.answer__block__wrapper .card .card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.answer__block__wrapper .card .card__head .open {
+  transform: rotate(180deg);
+}
+@media (max-width: 599px) {
+  .answer__block__wrapper .card .card__head svg {
+    width: 14px;
+    height: 16px;
+  }
+}
+.answer__block__wrapper .card .card__head span {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 120%;
+  color: #0054A9;
+}
+@media (max-width: 599px) {
+  .answer__block__wrapper .card .card__head span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+.answer__block__wrapper .card .card__body {
+  margin-top: 18px;
+  display: none;
+}
+@media (max-width: 599px) {
+  .answer__block__wrapper .card .card__body {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
+
+.about__company {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+@media (max-width: 599px) {
+  .about__company {
+    flex-direction: column;
+  }
+}
+.about__company .company__owner, .about__company .company__fabirc {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+.about__company .company__owner span, .about__company .company__fabirc span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+@media (max-width: 599px) {
+  .about__company .company__owner span, .about__company .company__fabirc span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    color: #353535;
+  }
+}
+.about__company .company__owner span:nth-child(1), .about__company .company__fabirc span:nth-child(1) {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+  margin-bottom: 6px;
+}
+@media (max-width: 599px) {
+  .about__company .company__owner span:nth-child(1), .about__company .company__fabirc span:nth-child(1) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    color: #353535;
+  }
+}
+
+/*# sourceMappingURL=instructionAqua.module.css.map */

@@ -15,6 +15,21 @@ $(document).ready(function() {
     $(this).find(".footnotes__arrow").attr("data-open", isOpen);
   });
 
+
+
+
+  $(document).ready(function() {
+    $('.card__head').click(function() {
+      let cardBody = $(this).siblings('.card__body');
+      cardBody.slideToggle();
+      $(this).find('svg').toggleClass('open');
+    });
+  });
+
+
+
+
+
   $(".header__expanded__link").mouseleave(function () {
     $(this).children(".expanded__link__hidden").hide()
     $(this).animate({
