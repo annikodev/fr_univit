@@ -1,6 +1,14 @@
 //СНОСКИ
 $(document).ready(function() {
   $(".footnotes__button").click(function() {
+    let buttonText = $(this).find('span').text();
+
+    if (buttonText === 'Развернуть сноски') {
+      $(this).find('span').text('Свернуть блок');
+    } else {
+      $(this).find('span').text('Развернуть сноски');
+    }
+
     $(".footnotes__list").slideToggle();
     let isOpen = $(this).find(".footnotes__arrow").attr("data-open");
     isOpen = isOpen === "true" ? "false" : "true";

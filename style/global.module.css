@@ -898,6 +898,7 @@ sub {
   font-size: 12px;
   line-height: 14px;
   color: #0054A9;
+  display: none;
   counter-reset: list-counter;
 }
 .footnotes .footnotes__list li {

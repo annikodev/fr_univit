@@ -301,6 +301,9 @@
 .about__block .about__block__title .about__title__text span {
   font-weight: 700;
 }
+.about__block .about__block__title .about__title__image {
+  animation: levitate 5s ease-in-out infinite;
+}
 .about__block .about__block__title .about__title__image img {
   margin-left: -75px;
 }
