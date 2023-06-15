@@ -137,5 +137,68 @@
       display: flex;
       flex-direction: column;
     }
+
+    .role__three__list {
+      padding-left: 16px;
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      gap: 12px;
+      margin-bottom: 12px;
+
+      ul {
+        list-style: initial;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        li {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 120%;
+          color: #353535;
+        }
+      }
+    }
+  }
+
+  .title__section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .title__section__bg__wrapper {
+      display: flex;
+    }
+  }
+
+
+  .role__four {
+    display: flex;
+    flex-direction: column;
+
+    .role__four__text {
+      strong {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        /* or 22px */
+        margin-top: 32px;
+
+
+        color: #353535;
+
+      }
+      .role__four__title {
+        display: grid;
+        margin-bottom: 24px;
+
+        .bg__title:nth-child(1) {
+          margin-top: -8px;
+        }
+      }
+    }
+
+
   }
 }
