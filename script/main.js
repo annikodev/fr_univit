@@ -86,27 +86,71 @@ $(document).ready(function() {
 //   });
 // });
 
+//
+// $(document).ready(function() {
+//
+//   $('body').scroll(function() {
+//     var windowHeight = $(window).height();
+//     var scrollPos = $(window).scrollTop();
+//
+//     // Для каждого элемента с классом .fade-in
+//     $('.animated__title').each(function() {
+//       var elementPos = $(this).offset().top;
+//
+//       // Проверяем, находится ли элемент в зоне видимости
+//       if (scrollPos > elementPos - windowHeight + 40) {
+//         $(this).css({
+//           'opacity': '1',
+//           'transform': 'translateY(0)'
+//         });
+//       }
+//     });
+//   });
+// });
+document.addEventListener('DOMContentLoaded', function() {
+  var animatedTitles = document.querySelectorAll('.animated__title');
+  var container = document.querySelector('.container');
 
-$(document).ready(function() {
-  $('.container').scroll(function() {
-    var windowHeight = $(window).height();
-    var scrollPos = $(window).scrollTop();
+  function animateTitles() {
+    var windowHeight = container.clientHeight;
+    var scrollPos = container.scrollTop;
 
-    // Для каждого элемента с классом .fade-in
-    $('.animated__title').each(function() {
-      var elementPos = $(this).offset().top;
+    animatedTitles.forEach(function(title) {
+      var elementPos = title.offsetTop;
 
-      // Проверяем, находится ли элемент в зоне видимости
-      if (scrollPos > elementPos - windowHeight + 40) {
-        $(this).css({
-          'opacity': '1',
-          'transform': 'translateY(0)'
-        });
+      if (scrollPos > elementPos - windowHeight + 200) {
+        title.style.opacity = '1';
+        title.style.transform = 'translateY(0)';
       }
     });
-  });
+  }
+
+  animateTitles();
+
+  container.addEventListener('scroll', animateTitles);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var animatedTitles = document.querySelectorAll('.animated__title');
+
+  function animateTitles() {
+    var windowHeight = window.innerHeight;
+    var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+    animatedTitles.forEach(function(title) {
+      var elementPos = title.offsetTop;
+
+      if (scrollPos > elementPos - windowHeight + 200) {
+        title.style.opacity = '1';
+        title.style.transform = 'translateY(0)';
+      }
+    });
+  }
+
+  animateTitles();
+
+  window.addEventListener('scroll', animateTitles);
+});
 
 
 $(document).ready(function() {

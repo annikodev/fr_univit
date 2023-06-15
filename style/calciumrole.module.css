@@ -1,0 +1,113 @@
+.role__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+.role__text strong {
+  font-weight: 700;
+}
+
+.section__wrapper {
+  max-width: 1116px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.section__wrapper .page__heading h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #0054A9;
+}
+.section__wrapper .role__first {
+  display: flex;
+  display: none;
+}
+.section__wrapper .role__first img {
+  max-width: 520px;
+  object-fit: contain;
+  object-position: top;
+}
+.section__wrapper .role__first .role__first__text {
+  padding-top: 30px;
+  width: 100%;
+  padding-right: 50px;
+}
+.section__wrapper .role__first .role__first__text .bg__title {
+  font-size: 28px;
+  margin: 16px 0;
+}
+.section__wrapper .about__calcium {
+  padding: 24px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section__wrapper .about__calcium .about__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #0054A9;
+}
+.section__wrapper .about__calcium .about__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+}
+.section__wrapper .about__calcium .about__doubled {
+  list-style: initial;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 82px;
+  gap: 32px;
+}
+.section__wrapper .about__calcium .about__doubled li {
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #353535;
+  max-width: 400px;
+}
+.section__wrapper .role__second {
+  display: flex;
+  gap: 12px;
+}
+.section__wrapper .role__second .role__second__text {
+  display: flex;
+  flex-direction: column;
+}
+.section__wrapper .role__second .role__second__text .bg__title__wrapper {
+  display: flex;
+  margin: 16px 0;
+}
+.section__wrapper .role__second .role__second__text .bg__title__wrapper .bg__title {
+  display: flex;
+}
+.section__wrapper .role__second img {
+  max-width: 300px;
+  object-fit: cover;
+}
+.section__wrapper .role__three {
+  display: flex;
+  gap: 12px;
+  margin-top: -32px;
+}
+.section__wrapper .role__three img {
+  object-fit: cover;
+  max-width: 300px;
+  position: relative;
+  left: -60px;
+}
+.section__wrapper .role__three .role__three__text {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=calciumrole.module.css.map */
