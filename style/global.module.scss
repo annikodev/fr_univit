@@ -5,8 +5,12 @@ sup {
 }
 
 
-body, html{
-  overflow-x: hidden;
+html, body {
+
+  @media screen and (min-width: 1200px){
+    overflow-x: hidden;
+
+  }
 }
 
 .cloud-top {
@@ -136,7 +140,6 @@ body {
 .header, main {
   width: 100%;
   max-width: 1586px;
-
 }
 
 article, section {
@@ -152,7 +155,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  //flex: 1;
   margin: 56px 0;
   gap: 56px;
 
@@ -509,6 +512,7 @@ main {
 
 //FOOTER STYLE
 .footer {
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -521,21 +525,6 @@ main {
 
 
 
-  .footer__alert {
-    //background: #DFDFDF;
-    //display: flex;
-    //justify-content: center;
-    //padding-top: 14px;
-    //padding-bottom: 10px;
-
-    .footer__alert__content {
-      @include basicBlock;
-
-      img {
-        width: 100%;
-      }
-    }
-  }
 
   .footer__navigation__wrapper {
     background: #0775A2;

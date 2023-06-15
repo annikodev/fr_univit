@@ -14,8 +14,10 @@ sup {
   cursor: pointer;
 }
 
-body, html {
-  overflow-x: hidden;
+@media screen and (min-width: 1200px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 .cloud-top {
@@ -100,7 +102,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   margin: 56px 0;
   gap: 56px;
   max-width: 1386px;
@@ -402,19 +403,6 @@ main:after {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.footer .footer__alert .footer__alert__content {
-  max-width: 1386px;
-  width: 100%;
-  padding: 0 20px;
-}
-@media (max-width: 599px) {
-  .footer .footer__alert .footer__alert__content {
-    padding: 0 10px;
-  }
-}
-.footer .footer__alert .footer__alert__content img {
-  width: 100%;
 }
 .footer .footer__navigation__wrapper {
   background: #0775A2;
