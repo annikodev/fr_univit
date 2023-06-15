@@ -1,0 +1,67 @@
+@import "shared.module";
+
+.single__question {
+  width: 100%;
+  max-width: 1116px;
+  display: flex;
+  flex-direction: column;
+
+  @include for-phone-only {
+    margin-top: -24px;
+  }
+
+  .question__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    color: #0054A9;
+    margin-bottom: 40px;
+
+    @include for-phone-only {
+      font-size: 18px;
+      line-height: 110%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .question__answer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #353535;
+    margin-bottom: 40px;
+
+    @include for-phone-only {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .question__other {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #0054A9;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+
+    @include for-phone-only {
+      gap: 12px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 120%;
+
+      svg {
+        width: 14px;
+        height: 16px;
+      }
+    }
+
+  }
+}

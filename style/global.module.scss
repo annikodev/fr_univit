@@ -1021,10 +1021,10 @@ sub {
       align-items: center;
 
       .footnotes__arrow[data-open = 'false'] {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
       }
       .footnotes__arrow[data-open = 'true'] {
-        transform: rotate(0deg);
+        transform: rotate(180deg);
       }
 
       span {

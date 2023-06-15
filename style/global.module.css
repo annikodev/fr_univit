@@ -872,10 +872,10 @@ sub {
   align-items: center;
 }
 .footnotes .footnotes__button__wrapper .footnotes__button .footnotes__arrow[data-open=false] {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .footnotes .footnotes__button__wrapper .footnotes__button .footnotes__arrow[data-open=true] {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 .footnotes .footnotes__button__wrapper .footnotes__button span {
   font-weight: 300;
