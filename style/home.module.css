@@ -404,6 +404,11 @@
   position: relative;
   min-height: 400px;
 }
+@media (max-width: 599px) {
+  .about__block .about__block__content__mobile {
+    overflow-x: hidden;
+  }
+}
 .about__block .about__block__content__mobile:before {
   content: "";
   position: absolute;

@@ -4,8 +4,21 @@ sup {
   cursor: pointer;
 }
 
+//body {
+//  overflow-x: hidden!important;
+//}
+//
 html, body {
-  overflow-x: hidden;
+  position: relative;
+
+  @include for-phone-only {
+    overflow-x: initial!important;
+
+  }
+
+  @include for-tiny-desktop-up {
+    overflow-x: hidden;
+  }
 }
 
 .cloud-top {

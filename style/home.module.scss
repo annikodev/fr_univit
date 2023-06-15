@@ -426,6 +426,11 @@
     position: relative;
     min-height: 400px;
 
+    @include for-phone-only {
+      overflow-x: hidden;
+
+    }
+
     &:before {
       content: '';
       position: absolute;

@@ -15,7 +15,17 @@ sup {
 }
 
 html, body {
-  overflow-x: hidden;
+  position: relative;
+}
+@media (max-width: 599px) {
+  html, body {
+    overflow-x: initial !important;
+  }
+}
+@media (min-width: 1200px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 .cloud-top {
